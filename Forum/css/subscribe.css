@@ -1,0 +1,136 @@
+main{
+    background-color: var(--whiteColor);
+}
+
+main .container > h3{
+    margin: 2rem auto;
+    max-width: 58rem;
+    width: 100%;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 122%;
+    text-align: center;
+}
+
+main .subscribe .container .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+main .container .row .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    min-width: 19rem;
+    max-width: 55rem;
+    width: 100%;
+    padding: 1.5rem;
+    border: 0.1rem solid var(--darkGrayColor);
+    border-radius: 0.5rem;
+    border-top-width: 0.5rem;
+}
+
+main .container .row .box:last-child{
+    border-color: var(--darkRedColor);
+}
+
+main .container .row .box:last-child h2{
+    color: var(--darkRedColor);
+}
+
+main .container .row .box .btn{
+    width: 100%;
+}
+
+main .container .row .box .free{
+    font-weight: 500;
+    font-size: var(--fs18);
+    line-height: 150%;
+    min-height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .row .box .prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    min-height: 7.5rem;
+}
+
+main .container .row .box .prices ul{
+    display: flex;
+    align-items: center;
+    background-color: #e3e7e9;
+    border-radius: 0.7rem;
+    padding: 0.2rem 0.4rem;
+    gap: 1rem;
+}
+
+main .container .row .box .prices ul li{
+    flex: auto;
+    padding: 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+main .container .row .box .prices ul li.active{
+    background-color: var(--whiteColor);
+    border-radius: 0.5rem;
+    cursor: pointer;   
+}
+
+main .container .row .box .prices ul li:hover{
+    background-color: var(--lightWhiteColor);
+    opacity: 0.9;
+}
+
+main .container .row .box .prices ul li span{
+    color: var(--darkRedColor);
+    font-weight: 300;
+}
+
+main .container .row .box .yearly{
+    display: none;
+}
+
+main .container .row .box .monthly{
+    display: none;
+}
+
+main .container .row .box .yearly.active{
+    display: block;
+}
+
+main .container .row .box .monthly.active{
+    display: block;
+}
+
+main .container .row .box .prices .yearly s{
+    color: var(--darkGrayColor);
+}
+
+main .container .row .box .price{
+    font-size: var(--fs18);
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--lightBlackColor);
+}
+
+main .container .row .box .privileges{
+    color: var(--lightBlackColor);
+}
+
+main .container .row .box .privileges li i{
+    color: var(--darkGrayColor);
+    margin-right: 1rem;
+}
+
