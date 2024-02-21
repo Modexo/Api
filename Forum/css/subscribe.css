@@ -134,3 +134,107 @@ main .container .row .box .privileges li i{
     margin-right: 1rem;
 }
 
+.faqs .container .row{
+    margin: 4rem auto;
+    max-width: 96rem;
+}
+
+.faqs .container .row h2{
+    font-weight: 700;
+    font-size: var(--fs24);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.faqs .container .row .faq{
+    border-bottom: 0.1rem solid #e3e7e9;
+    transition: var(--transition);
+}
+
+.faqs .container .row .faq:hover{
+    background-color: var(--lightWhiteColor);
+}
+
+.faqs .container .row .faq .question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.75rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faqs .container .row .faq.active .question{
+    background-color: var(--lightWhiteColor);
+}
+
+.faqs .container .row .faq .question h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.faqs .container .row .faq .question i{
+    transition: var(--transition);
+}
+
+.faqs .container .row .faq.faq.active .question i{
+    transform: rotate(180deg);
+}
+
+.faqs .container .row .faq .answer p{
+    margin: 0 0 1rem 1rem;
+}
+
+.faqs .container .row .faq .answer{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: var(--transition);
+}
+
+.faqs .container .row .faq.active .answer{
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+}
+
+.contacts .container .row{
+    max-width: 96rem;
+    margin: 0 auto 2rem;
+    background-color: var(--lightWhiteColor);
+    padding: 1.4rem 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts .container .row .contact h3{
+    margin-bottom: 0.5rem;
+    font-size: var(--fs24);
+    line-height: 1.2;
+}
+
+.contacts .container .row .contact p{
+    font-size: var(--fs14);
+    color: var(--darkGrayColor);
+}
+
+.contacts .container .row .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 2rem;
+    flex: 0 20rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 863px){
+    .contacts .container .row .btn{
+        margin-top: 0;
+    }
+}
